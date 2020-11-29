@@ -1,0 +1,41 @@
+<mat-card class="card">
+    <h1>Cadastrar Candidato</h1>
+    <form class="candidato-form" #candidatoForm = "ngForm" (ngSubmit) = "onSubmit(candidatoForm.value)">
+
+        <mat-form-field class="example-full-width">
+            <mat-label>ID</mat-label>
+            <input matInput type="number" placeholder="Insira Um ID" ngModel name="cand_id">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Nome</mat-label>
+          <input matInput type="text" placeholder="Insira Seu Nome" ngModel name="cand_nome">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Insira Seu Email" type="email" ngModel name="cand_email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Idade</mat-label>
+            <input matInput type="number" ngModel name="cand_idade">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Login</mat-label>
+            <input matInput placeholder="Insira Seu usuário" ngModel name="cand_login">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" ngModel name="cand_senha">
+        </mat-form-field>
+
+        <mat-checkbox class="example-margin" ngModel name="cand_status">Check me!</mat-checkbox>
+
+        <br/>
+
+        <button mat-button type="submit" class="submit-button">cadastrar</button>
+      </form>
+  </mat-card>

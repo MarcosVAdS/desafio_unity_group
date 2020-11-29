@@ -1,0 +1,28 @@
+.card {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.candidato-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+.submit-button {
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+}
