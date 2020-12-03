@@ -14,16 +14,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
+import { MatListModule } from '@angular/material/list';
+import { DataTablesModule } from 'angular-datatables'; 
 
-//import axios to make requisitions
-import axios, { AxiosRequestConfig, AxiosPromise, AxiosResponse, AxiosError } from 'axios';
  
 
 @NgModule({
   declarations: [
     AppComponent,
     CandidatosComponent,
-    FormCandidatosComponent
+    FormCandidatosComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +41,8 @@ import axios, { AxiosRequestConfig, AxiosPromise, AxiosResponse, AxiosError } fr
     MatInputModule,
     MatCheckboxModule,
     MatDividerModule,
+    MatListModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,5 @@ CREATE TABLE `candidato`(
   `cand_idade` varchar(11) COLLATE utf8mb4_general_ci NOT NULL,
   `cand_login` varchar(100) COLLATE utf8mb4_general_ci,
   `cand_senha` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `cand_status` char(1) COLLATE utf8mb4_general_ci DEFAULT 'N',
-  PRIMARY KEY (`cand_id`)
+  `cand_status` char(1) COLLATE utf8mb4_general_ci DEFAULT 'N'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

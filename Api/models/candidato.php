@@ -11,22 +11,20 @@
             $this->cand_senha = @ $_REQUEST['cand_senha'];
             //$this->cand_status = @ $_REQUEST['cand_status'];
                         
-            $sql = "INSERT INTO candidato (cand_id, cand_nome, cand_email, cand_idade, cand_login, cand_senha, cand_status) VALUES ('$this->cand_id', '$this->cand_nome', '$this->cand_email', '$this->cand_idade', '$this->cand_login', '$this->cand_senha', 'S')";
+            var_dump($_REQUEST);
+            print_r($_POST);
+            $sql = "INSERT INTO candidato (cand_id, cand_nome, cand_email, cand_idade, cand_login, cand_senha, cand_status)
+             VALUES ('$this->cand_id', '$this->cand_nome', '$this->cand_email', '$this->cand_idade', '$this->cand_login', '$this->cand_senha', 'S')";
 
-            $out = $connect->query($sql);
-            if ( $rs = $out ) {
-                foreach ( $rs as $row ) {
-                    $col = array();
-                    foreach ( $row as $k=>$v ) {
-                        $col[$k] = stripslashes($v);
-                        
-                    }
-                    $rows[] = $col;
-                }
-                return $rows;
+            if ($connect->query($sql) === TRUE){
+                return mysqli_insert_id($connect);
+                // return "WORK";
+            }else{
+                return $connect->connect_error;
+                // return "ERROR";
             }
 
-            echo $this->cand_id;
+            echo $connect->query($sql);
             $connect -> close();
         }
 
