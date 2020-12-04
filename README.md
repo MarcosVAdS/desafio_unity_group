@@ -25,6 +25,9 @@ Para executar o projeto podemos executar o passo a passo numerado a sequir:
 
     3.2 Após todas as dependencias instaladas, execute:
     `npm start`
+    
+    3.3 Para buildar seu projeto:
+    `npm build`
 
 ## 4. Utilizando o container do docker:
 
