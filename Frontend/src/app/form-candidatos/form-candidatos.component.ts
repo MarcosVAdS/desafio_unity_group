@@ -22,7 +22,7 @@ export class FormCandidatosComponent implements OnInit {
       url: 'http://localhost:8080/Api/controllers/inserirCandidato.php',
       data: data,
       success: function(response){
-        alert('Usuário cadastrado!')
+        alert("Usuário cadastrado!")
         document.location.reload(true)
       },
       error: function(error){
