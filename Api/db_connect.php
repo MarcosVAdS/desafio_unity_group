@@ -3,7 +3,6 @@
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Methods: POST, GET, PUT, DELETE");
     header("Content-Type: application/json; charset=utf-8");
-    header("Access-Control-Allow-Headers: Content-Type");
 
     $localhost = "localhost"; 
     $username = "root"; 

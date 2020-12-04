@@ -11,8 +11,8 @@
             $this->cand_senha = @ $_REQUEST['cand_senha'];
             //$this->cand_status = @ $_REQUEST['cand_status'];
                         
-            var_dump($_REQUEST);
             print_r($_POST);
+            
             $sql = "INSERT INTO candidato (cand_id, cand_nome, cand_email, cand_idade, cand_login, cand_senha, cand_status)
              VALUES ('$this->cand_id', '$this->cand_nome', '$this->cand_email', '$this->cand_idade', '$this->cand_login', '$this->cand_senha', 'S')";
 

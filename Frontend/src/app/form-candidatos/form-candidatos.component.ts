@@ -16,16 +16,17 @@ export class FormCandidatosComponent implements OnInit {
   onSubmit(dataForm: any) {
     
     var data = $('#candidatoForm').serializeArray()
-    console.log(data)
 
     $.ajax({
       method: 'POST',
       url: 'http://localhost:8080/Api/controllers/inserirCandidato.php',
       data: data,
-      cache: false,
-      contentType: false,
       success: function(response){
-        console.log(response)
+        alert('Usuário cadastrado!')
+        document.location.reload(true)
+      },
+      error: function(error){
+        alert(error)
       }
     })
 
